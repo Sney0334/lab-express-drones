@@ -11,6 +11,9 @@ router.get('/drones', (req, res, next) => {
     console.log(drones);
     res.render("drones/list",{drones})
   })
+  .catch((err)=>{
+    console.log(err)
+  })
 });
 
 router.get('/drones/create', (req, res, next) => {
